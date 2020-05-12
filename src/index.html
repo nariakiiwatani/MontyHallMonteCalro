@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="UTF-8">
+		<script src="scripts/main.ts" defer></script>
+	</head>
+	<body>
+		<h1>モンティ・ホール問題シミュレーター</h1>
+		<div id="wrapper">
+			<section id="simulator">
+				<div class="info"></div>
+				<div class="doors">
+					<span class="door"></span>
+					<span class="door"></span>
+					<span class="door"></span>
+				</div>
+				<div class="gui">
+					<button class="reset" style="display:none;">最初から</button><br />
+					<input type="checkbox" class="auto">自動モード</input>
+				</div>
+			</section>
+			<section id="statistics">
+				<h2>集計結果</h2>
+				<button class="clear">全て消す</button>
+				<p class="first_is_correct"></p>
+				<p class="first_is_not_correct"></p>
+			</section>
+		</div>
+	</body>
+</html>

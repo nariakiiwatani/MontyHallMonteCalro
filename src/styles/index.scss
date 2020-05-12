@@ -1,0 +1,57 @@
+#wrapper {
+	display: flex;
+	flex-direction: row;
+}
+
+#editor {
+	flex-grow: 1;
+	.success {
+		color: green;
+	}
+	.error {
+		color: red;
+	}
+}
+
+.doors {
+	border-collapse: separate;
+	border-spacing: 0.5rem 0;
+}
+.door {
+	display: table-cell;
+
+	width: 10rem;
+	height: 10rem;
+	margin: 0 5px;
+
+	background-image: url("../images/door_close.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	&.first {
+		border: solid rgb(0,255,255) 3px;
+		border-radius: 5px;
+	}
+	&.second {
+		border: solid rgb(255,0,255) 3px;
+		border-radius: 5px;
+	}
+	&.chosen {
+		background-image: url("../images/door_half_open.png");
+	}
+	&.open {
+		background-image: url("../images/ng.png"), url("../images/door_open.png");
+		;
+		&.correct {
+			background-image: url("../images/ok.png"), url("../images/door_open.png");
+		}
+	}
+}
+
+#statistics {
+	flex-grow: 1;
+	.list {
+		display: inline-flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+	}
+}
